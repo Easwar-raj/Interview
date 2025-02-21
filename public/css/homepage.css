@@ -1,0 +1,364 @@
+.basicBlockMain .basicBlockHeader {
+  background: linear-gradient(to right, #ffffff, #0930ae);
+  color: #fff;
+  overflow: hidden;
+}
+.basicBlockMain .basicBlockHeader .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.basicBlockMain .basicBlockHeader .basicBlockHeaderLogo {
+  width: 200px;
+  height: auto;
+}
+.basicBlockMain .basicBlockHeader .basicBlockHeaderTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 20px;
+}
+.basicBlockMain .basicBlockHeader .contactInfo {
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.basicBlockMain .basicBlockHeader p {
+  margin: 0;
+}
+.basicBlockMain .basicBlock {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.basicBlockMain .basicDetails {
+  background: rgba(12, 96, 198, 0.2);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 5%;
+  max-width: 450px;
+  width: 100%;
+}
+.basicBlockMain .basicDetails .basicFormGroup .formGroup {
+  padding: 10px;
+}
+.basicBlockMain .basicDetails .basicFormGroup .formGroup label {
+  margin-bottom: 5px;
+}
+.basicBlockMain .basicDetails .basicFormGroup .formGroup input {
+  margin-bottom: 15px;
+}
+.basicBlockMain .basicDetails .basicFormGroup .formGroup .submitBlock {
+  display: flex;
+  justify-content: end;
+}
+.basicBlockMain .basicDetails .basicFormGroup .formGroup .submitBlock .submitBtn {
+  margin-bottom: 0;
+}
+.basicBlockMain .basicDetails .formGroup .formGroupItem label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.basicBlockMain .basicDetails .formGroup .formGroupItem input, .basicBlockMain .basicDetails .formGroup .formGroupItem select {
+  padding: 5px 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.basicBlockMain .basicDetails .formGroup .formGroupItem input:focus, .basicBlockMain .basicDetails .formGroup .formGroupItem select:focus {
+  border-color: #405cf5;
+  box-shadow: 0 0 5px rgba(64, 92, 245, 0.3);
+}
+.basicBlockMain .basicDetails .formGroup .formGroupItem .error {
+  font-size: 14px;
+  color: #d9534f;
+  margin-top: 5px;
+}
+.basicBlockMain .basicDetails .formGroup .submitBlock {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+.basicBlockMain .basicDetails .formGroup .submitBlock .submitBtn {
+  background-color: #405cf5;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.basicBlockMain .basicDetails .formGroup .submitBlock .submitBtn:hover {
+  background-color: #354bb3;
+}
+.basicBlockMain .basicDetails .formGroup .submitBlock .submitBtn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(64, 92, 245, 0.5);
+}
+.basicBlockMain .basicDetails .formGroup .submitBlock .submitBtn:active {
+  background-color: #2e3d9c;
+}
+.basicBlockMain .basicDetails .submitBtn {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+.basicBlockMain .basicDetails .submitBtn:hover {
+  background-color: #4f60be;
+}
+
+/* Extra Small Devices (Phones, max-width: 320px) */
+@media (max-width: 320px) {
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderLogo {
+    width: 150px;
+  }
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderTitle {
+    font-size: 1.2rem;
+  }
+  .basicBlockMain .basicBlockHeader .contactInfo {
+    font-size: 0.8rem;
+  }
+  .basicBlockMain .basicBlock {
+    margin-top: 20%;
+  }
+  .basicBlockMain .basicDetails {
+    padding: 10px;
+    max-width: 300px;
+  }
+  .basicBlockMain .submitBtn {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+/* Small Devices (Phones, 321px to 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderLogo {
+    width: 180px;
+  }
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderTitle {
+    font-size: 1.3rem;
+  }
+  .basicBlockMain .basicBlock {
+    margin-top: 20%;
+  }
+  .basicBlockMain .basicDetails {
+    padding: 15px;
+    max-width: 350px;
+  }
+  .basicBlockMain .submitBtn {
+    font-size: 15px;
+    height: 42px;
+  }
+}
+/* Medium Devices (Tablets, 481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderLogo {
+    width: 200px;
+  }
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderTitle {
+    font-size: 1.4rem;
+  }
+  .basicBlockMain .basicBlock {
+    margin-top: 15%;
+  }
+  .basicBlockMain .basicDetails {
+    padding: 20px;
+    max-width: 400px;
+  }
+  .basicBlockMain .submitBtn {
+    font-size: 16px;
+    height: 44px;
+  }
+}
+/* Large Devices (Small Laptops, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderLogo {
+    width: 220px;
+  }
+  .basicBlockMain .basicBlockHeader .basicBlockHeaderTitle {
+    font-size: 1.2rem;
+  }
+  .basicBlockMain .basicDetails {
+    padding: 25px;
+    max-width: 450px;
+    margin-top: 10%;
+  }
+  .basicBlockMain .submitBtn {
+    font-size: 17px;
+    height: 46px;
+  }
+}
+.basicBlockHeaderass {
+  background: linear-gradient(to right, #ffffff, #0930ae);
+  color: #fff;
+}
+.basicBlockHeaderass .row {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.basicBlockHeaderass .basicBlockHeaderLogo {
+  width: 200px;
+  height: auto;
+  text-align: left;
+}
+.basicBlockHeaderass .basicBlockHeaderTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 20px;
+}
+.basicBlockHeaderass .contactInfo {
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.basicBlockHeaderass p {
+  margin: 0;
+}
+
+.assessmentBlock .assessment_person {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.assessmentBlock .interviewBlock .interviewHeading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.assessmentBlock .personDetail .nameBlock, .assessmentBlock .personDetail .rollNoBlock, .assessmentBlock .personDetail .departBlock {
+  font-weight: 700;
+}
+.assessmentBlock .question-container {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.assessmentBlock .question-container .questionBlock .header .headlevel2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.assessmentBlock .question-container .questionBlock .header .paradesc {
+  margin-bottom: 20px !important;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.assessmentBlock .question-container .question {
+  margin-bottom: 20px;
+}
+.assessmentBlock .question-container .question p {
+  font-size: 16px;
+  margin-bottom: 15px !important;
+}
+.assessmentBlock .question-container .question label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.assessmentBlock .question-container .question label input[type=radio] {
+  margin-right: 10px;
+}
+.assessmentBlock .question-container .question label:hover {
+  color: #007BFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .basicBlockHeaderass .row {
+    flex-direction: column; /* Stack items vertically */
+  }
+  .basicBlockHeaderass .basicBlockHeaderLogo, .basicBlockHeaderass .basicBlockHeaderTitle, .basicBlockHeaderass .contactInfo {
+    text-align: center;
+    margin: 5px 0;
+  }
+  .basicBlockHeaderass .basicBlockHeaderTitle {
+    font-size: 1rem;
+  }
+  .basicBlockHeaderass .contactInfo {
+    font-size: 0.8rem;
+  }
+  .question-container {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+  .submitBtn {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .basicBlockHeaderass .row {
+    padding: 10px; /* Reduce padding */
+  }
+  .basicBlockHeaderTitle {
+    font-size: 0.9rem; /* Smaller title */
+  }
+  .question-container p {
+    font-size: 14px; /* Reduce font size for better readability */
+  }
+  .submitBtn {
+    padding: 10px; /* Adjust button padding */
+  }
+}
+@media (max-width: 320px) {
+  .basicBlockHeaderass .row {
+    padding: 10px; /* Reduce padding */
+  }
+  .basicBlockHeaderTitle {
+    font-size: 0.9rem; /* Smaller title */
+  }
+  .question-container p {
+    font-size: 14px; /* Reduce font size for better readability */
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
