@@ -225,24 +225,24 @@ class QuestionSeeder extends Seeder
 
             //     'session' => 'Personality'
             // ],
-            [
-                'question' => 'What are your long-term career goals?',
-                'options' => json_encode([]),
+            // [
+            //     'question' => 'What are your long-term career goals?',
+            //     'options' => json_encode([]),
 
-                'session' => 'Personality'
-            ],
-            [
-                'question' => 'How would you prioritize tasks when managing multiple deadlines?',
-                'options' => json_encode([]),
+            //     'session' => 'Personality'
+            // ],
+            // [
+            //     'question' => 'How would you prioritize tasks when managing multiple deadlines?',
+            //     'options' => json_encode([]),
 
-                'session' => 'Personality'
-            ],
-            [
-                'question' => 'On a scale of 1 to 5, how would you rate your: Leadership skills: _____, Teamwork: _____, Communication: _____, Adaptability: _____',
-                'options' => json_encode([]),
+            //     'session' => 'Personality'
+            // ],
+            // [
+            //     'question' => 'On a scale of 1 to 5, how would you rate your: Leadership skills: _____, Teamwork: _____, Communication: _____, Adaptability: _____',
+            //     'options' => json_encode([]),
 
-                'session' => 'Personality'
-            ],
+            //     'session' => 'Personality'
+            // ],
             [
                 'question' => 'What does HTTP stand for?',
                 'options' => json_encode(['Hyper Transfer Text Protocol','High Text Transfer Protocol','HyperText Transfer Protocol','Hyperlink Transfer Process']),
@@ -271,6 +271,36 @@ class QuestionSeeder extends Seeder
                 'question' => 'Expand the term SQL.',
                 'options' => json_encode(['Standard Query Language','Structured Query Logic','System Query Language','Structured Query Language']),
                 'correct_answer' => 4,
+                'session' => 'Skill_IT'
+            ],
+            [
+                'question' => 'Write a C program to find the factorial of a number using recursion.',
+                'options' => json_encode([]),
+
+                'session' => 'Skill_IT'
+            ],
+            [
+                'question' => 'Write a C++ program to check if a number is a palindrome..',
+                'options' => json_encode([]),
+
+                'session' => 'Skill_IT'
+            ],
+            [
+                'question' => 'Write a Java program to find the largest element in an array.',
+                'options' => json_encode([]),
+
+                'session' => 'Skill_IT'
+            ],
+            [
+                'question' => 'Write a Java program to reverse a string.',
+                'options' => json_encode([]),
+
+                'session' => 'Skill_IT'
+            ],
+            [
+                'question' => 'Write a C program to check if a number is prime.',
+                'options' => json_encode([]),
+
                 'session' => 'Skill_IT'
             ],
             // [
@@ -315,18 +345,18 @@ class QuestionSeeder extends Seeder
             //     'correct_answer' => 1,
             //     'session' => 'Skill_Marketing'
             // ],
-            [
-                'question' => 'How would you handle a conflict between two team members? Write your approach in 50 words.',
-                'options' => json_encode([]),
+            // [
+            //     'question' => 'How would you handle a conflict between two team members? Write your approach in 50 words.',
+            //     'options' => json_encode([]),
 
-                'session' => 'Skill_Hr'
-            ],
-            [
-                'question' => 'What are the key steps in the recruitment process?',
-                'options' => json_encode([]),
+            //     'session' => 'Skill_Hr'
+            // ],
+            // [
+            //     'question' => 'What are the key steps in the recruitment process?',
+            //     'options' => json_encode([]),
 
-                'session' => 'Skill_Hr'
-            ],
+            //     'session' => 'Skill_Hr'
+            // ],
         ];
 
         foreach ($questions as $data) {
