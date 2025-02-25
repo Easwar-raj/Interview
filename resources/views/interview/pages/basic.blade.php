@@ -58,14 +58,19 @@
                         <label for="area_of_intrest">Preferred Job Role</label>
                         <select name="area_of_intrest" id="area_of_intrest" required>
                             <option value="" disabled selected>Select your preferred job role</option>
-                            <option value="Operations">Operations</option>
+                            {{-- <option value="Operations">Operations</option>
                             <option value="Sales">Sales</option>
                             <option value="CC & Banking">CC & Banking</option>
                             <option value="HR Recruitment">HR Recruitment</option>
                             <option value="Lead Generation">Lead Generation</option>
                             <option value="Business Development">Business Development</option>
                             <option value="Admin & Accounts">Admin & Accounts</option>
-                            <option value="IT">IT</option>
+                            <option value="IT">IT</option> --}}
+                            <option value="Fullstack Developer">Fullstack Developer</option>
+                            <option value="Frontend Developer">Frontend Developer</option>
+                            <option value="Backend Developer">Backend Developer</option>
+                            <option value="Cloud Engineering">Cloud Engineering</option>
+                            <option value="Mobile Application Developer">Mobile Application Developer</option>
                         </select>
                         @error('area_of_intrest') <span class="error">{{ $message }}</span> @enderror
                     </div>

@@ -58,7 +58,7 @@
                     <div class="d-flex justify-content-end time">
                     <div>
                         <p id="countdown-timer" class="time-count">
-                                <span id="minutes">60</span>:<span id="seconds">00</span>
+                                <span id="minutes">45</span>:<span id="seconds">00</span>
                             </p>
                         </div>
                     </div>
@@ -85,17 +85,17 @@
                         <span>Section {{ $loop->iteration }} :</span> {{ $session }}
                     </h3>
                 </div>
- 
+
                 @php $serialNumber = 1; @endphp
- 
+
                 @foreach($sessionQuestions as $index => $question)
                     <div class="question">
                         <p class="fw-bold">{{ $serialNumber++ }}) {{ $question->question }}</p>
- 
+
                         @php
                             $options = is_string($question->options) ? json_decode($question->options, true) : $question->options;
                         @endphp
- 
+
                         @if(!empty($options))
                             <!-- Render options as radio buttons -->
                             @foreach($options as $optionIndex => $option)
@@ -113,12 +113,12 @@
                     </div>
                 @endforeach
             @endforeach
- 
+
             <div class="submitBlock d-flex justify-content-end mb-5 sm-sb">
                 <input type="submit" value="Submit" class="submitBtn sm-Btn">
             </div>
         </form>
- 
+
     </div>
 </div>
     </div>
@@ -126,52 +126,52 @@
 
 <script>
     // Set countdown duration (in seconds)
-    let timeLeft = 60 * 60;  // 1 hour (3600 seconds)
- 
+    let timeLeft = 45 * 60;  // 1 hour (3600 seconds)
+
     function updateTimer() {
         let minutes = Math.floor(timeLeft / 60);
         let seconds = timeLeft % 60;
- 
+
         document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
         document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
- 
+
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert('Time is up! Submitting your test.');
             submitTest();
         }
- 
+
         timeLeft--;
     }
- 
+
     // Function to submit the test
     function submitTest() {
         document.querySelector('.questionBlock').submit();
     }
- 
+
     // Start countdown timer
     let timerInterval = setInterval(updateTimer, 1000);
- 
+
     // Initial call to display the correct time at page load
     updateTimer();
- 
+
     // Detect tab switching or minimizing the window
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
             submitTest();
         }
     });
- 
+
     // Detect when the browser window loses focus (user switches to another app)
     window.addEventListener('blur', function() {
         submitTest();
     });
- 
+
     // Prevent right-click to discourage cheating
     document.addEventListener('contextmenu', function(event) {
         event.preventDefault();
     });
- 
+
     // Prevent F12, Ctrl+Shift+I, Ctrl+U, and other developer tools
     document.addEventListener('keydown', function(event) {
         if (
@@ -190,14 +190,14 @@
         submitTest();
 
    }
- 
+
     // Submit form when screen size changes (resize event)
     // window.addEventListener('resize', function() {
     //     submitTest();
     // });
 
-    
- 
+
+
 </script>
 
 
@@ -242,7 +242,7 @@
 
 /* Add styles when the textarea is focused */
 textarea:focus {
-    border-color: #007bff; 
+    border-color: #007bff;
     background-color: #fff; /* Slightly brighter background */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
 }
@@ -291,7 +291,7 @@ textarea:focus {
             text-align: center;
             color: black;
             border-radius: 5px;
-            
+
         }
         .headlevel2
         {
@@ -311,8 +311,8 @@ textarea:focus {
     {
         width: 100%;
     }
-    
-    
+
+
 
 }
 

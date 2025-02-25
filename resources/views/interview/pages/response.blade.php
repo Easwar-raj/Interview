@@ -30,7 +30,7 @@
 
 <script>
 
-const redirectTime = 4000; // 5 seconds
+const redirectTime = 2000; // 2 seconds
 
 // URL to redirect to
 const redirectUrl = "/";
